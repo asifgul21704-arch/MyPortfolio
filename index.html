@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M. Asif Khan | Full-Stack Web Developer</title>
+  <meta name="description" content="M. Asif Khan is a Full-Stack Web Developer with 3 years of experience building modern websites and web applications." />
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">M.Asif.K</div>
+      <p>Full-Stack Web Dev...</p>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-text">Initializing Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links " id="nav-links">
+      <li><a href="#home" class="nav-link ">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Modern Websites for Growing Businesses
+      </div>
+      <h1 class="hero-name">
+        <span class="hero-greeting">Hello, I'm</span>
+        <span class="hero-title">M. Asif Khan</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">&lt;</span>
+        <span class="role-text" id="role-text"></span>
+        <span class="cursor-blink">|</span>
+        <span class="role-suffix">/&gt;</span>
+      </div>
+      <p class="hero-desc">
+        Modern Websites That Help Businesses Grow
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </a>
+        <a href="Muhammad_Asif_Khan_Full_Stack_Developer_CV.pdf" download="Muhammad_Asif_Khan_Full_Stack_Developer_CV.pdf" class="btn btn-download">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span>+
+          <span class="stat-label">Featured Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>+
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Core Stack Layers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring1"></div>
+        <div class="avatar-ring ring2"></div>
+        <div class="avatar-ring ring3"></div>
+        <div class="avatar-core">
+          <img src="profile.png" alt="M. Asif Khan" class="profile-photo" />
+          <span class="photo-fallback" role="img" aria-label="M. Asif Khan initials" hidden>AK</span>
+        </div>
+        <div class="floating-icon icon1"><i class="fab fa-react"></i></div>
+        <div class="floating-icon icon2"><i class="fab fa-node-js"></i></div>
+        <div class="floating-icon icon3"><i class="fas fa-database"></i></div>
+        <div class="floating-icon icon4"><i class="fab fa-js-square"></i></div>
+        <div class="floating-icon icon5"><i class="fab fa-css3-alt"></i></div>
+        <div class="floating-icon icon6"><i class="fab fa-html5"></i></div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section-header">
+      <span class="section-tag">// 01. WHO AM I</span>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card reveal">
+        <div class="about-avatar-box">
+          <div class="about-avatar">
+            <img src="about.png" alt="M. Asif Khan" class="about-photo" />
+            <span class="photo-fallback-about" role="img" aria-label="M. Asif Khan initials" hidden>AK</span>
+          </div>
+          <div class="about-glow"></div>
+        </div>
+        <div class="about-social">
+          <a href="https://github.com/asifgul21704-arch" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/muhammad-asif-129077399/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3 class="about-name">M. Asif Khan</h3>
+        <p class="about-role-badge">Full-Stack Web Developer</p>
+        <p class="about-bio">
+          I am M. Asif Khan, a Full-Stack Web Developer with 3 years of experience building modern, responsive, and user-friendly web applications. I specialize in developing complete web solutions using React.js, Node.js, Express.js, and MongoDB. My goal is to help businesses and organizations grow through reliable, scalable, and modern digital experiences.
+        </p>
+        <div class="about-info-grid">
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Pakistan</span></div>
+          <div class="info-item"><i class="fas fa-graduation-cap"></i><span>BS Software Engineering</span></div>
+          <div class="info-item"><i class="fas fa-briefcase"></i><span>3 Years' Experience</span></div>
+          <div class="info-item"><i class="fas fa-code"></i><span>Full-Stack Web Developer</span></div>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem; display:inline-flex;">
+          <i class="fas fa-paper-plane"></i> Let's Connect
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section-header">
+      <span class="section-tag">// 02. WHAT I KNOW</span>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="skills-container">
+      <div class="skills-category reveal">
+        <h3 class="category-title"><i class="fas fa-laptop-code"></i> Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-icon"><i class="fab fa-react"></i></div><span class="skill-name">React.js</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fab fa-js-square"></i></div><span class="skill-name">JavaScript</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fab fa-html5"></i></div><span class="skill-name">HTML5</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><span class="skill-name">CSS3</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fas fa-wind"></i></div><span class="skill-name">Tailwind CSS</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fas fa-mobile-alt"></i></div><span class="skill-name">Responsive Web Design</span></div>
+        </div>
+      </div>
+      <div class="skills-category reveal">
+        <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-icon"><i class="fab fa-node-js"></i></div><span class="skill-name">Node.js</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><span class="skill-name">Express.js</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fas fa-code-branch"></i></div><span class="skill-name">REST APIs</span></div>
+        </div>
+      </div>
+      <div class="skills-category reveal">
+        <h3 class="category-title"><i class="fas fa-database"></i> Database</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-icon"><i class="fas fa-database"></i></div><span class="skill-name">MongoDB</span></div>
+          <div class="skill-card"><div class="skill-icon"><i class="fas fa-cloud"></i></div><span class="skill-name">MongoDB Atlas</span></div>
+        </div>
+      </div>
+      <div class="skills-category reveal">
+        <h3 class="category-title"><i class="fas fa-tools"></i> Tools & Platforms</h3>
+        <div class="tech-badges">
+          <span class="tech-badge"><i class="fab fa-github"></i> GitHub</span>
+          <span class="tech-badge"><i class="fas fa-code-branch"></i> Git</span>
+          <span class="tech-badge"><i class="fas fa-cube"></i> VS Code</span>
+          <span class="tech-badge"><i class="fas fa-globe"></i> Vercel</span>
+          <span class="tech-badge"><i class="fas fa-train"></i> Railway</span>
+          <span class="tech-badge"><i class="fas fa-robot"></i> AI Automation</span>
+          <span class="tech-badge"><i class="fas fa-palette"></i> Graphic Designing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="section-header">
+      <span class="section-tag">// 03. WHAT I'VE BUILT</span>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-school"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/asifgul21704-arch/school-college_managment-system" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Shawan School & College Management System GitHub repository"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Shawan School &amp; College Management System</h3>
+        <p class="project-desc">A MERN stack school and college management platform for managing students, teachers, parents, and administrators.</p>
+        <div class="project-tags"><span class="proj-tag">MERN Stack</span><span class="proj-tag">Student Management</span><span class="proj-tag">Admin Dashboard</span></div>
+        <a href="https://github.com/asifgul21704-arch/school-college_managment-system" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fab fa-github"></i> GitHub Repository</a>
+        <a href="https://school-college-managment-system-tpc.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-utensils"></i></div>
+          <div class="project-links">
+            <a href="https://griffly-web-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Griffly Food Delivery App live demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Griffly Food Delivery App</h3>
+        <p class="project-desc">A food delivery web application with dedicated customer and admin dashboards.</p>
+        <div class="project-tags"><span class="proj-tag">Food Delivery</span><span class="proj-tag">Customer Dashboard</span><span class="proj-tag">Admin Dashboard</span></div>
+        <a href="https://griffly-web-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-rocket"></i> Live Demo</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-store"></i></div>
+          <div class="project-links">
+            <a href="https://resturent-web-tau.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Restaurant Website live demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Restaurant Website</h3>
+        <p class="project-desc">A modern website created for a restaurant business.</p>
+        <div class="project-tags"><span class="proj-tag">Restaurant</span><span class="proj-tag">Business Website</span></div>
+        <a href="https://resturent-web-tau.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fas fa-rocket"></i> Live Demo</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-bread-slice"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/asifgul21704-arch/Bakery_Website" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Bakery Website GitHub repository"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Bakery Website</h3>
+        <p class="project-desc">A website project for a bakery business.</p>
+        <div class="project-tags"><span class="proj-tag">Bakery</span><span class="proj-tag">Business Website</span></div>
+        <a href="https://github.com/asifgul21704-arch/Bakery_Website" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fab fa-github"></i> GitHub Repository</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/asifgul21704-arch/e-comerce-shop" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="E-commerce Website GitHub repository"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">E-commerce Website</h3>
+        <p class="project-desc">An e-commerce web project.</p>
+        <div class="project-tags"><span class="proj-tag">E-commerce</span><span class="proj-tag">Online Store</span></div>
+        <a href="https://github.com/asifgul21704-arch/e-comerce-shop" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fab fa-github"></i> GitHub Repository</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/asifgul21704-arch/Health-Care-Managment-DashBoard" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="Health Care Management Dashboard GitHub repository"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Health Care Management Dashboard</h3>
+        <p class="project-desc">A dashboard project for healthcare management.</p>
+        <div class="project-tags"><span class="proj-tag">Healthcare</span><span class="proj-tag">Management Dashboard</span></div>
+        <a href="https://github.com/asifgul21704-arch/Health-Care-Managment-DashBoard" target="_blank" rel="noopener noreferrer" class="project-live-btn"><i class="fab fa-github"></i> GitHub Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education" id="education">
+    <div class="section-header">
+      <span class="section-tag">// 04. MY JOURNEY</span>
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="edu-header">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div><h3 class="edu-degree">BS Software Engineering (BSSE)</h3><p class="edu-uni">Gomal University, Dera Ismail Khan, Pakistan</p></div>
+          </div>
+          <p class="edu-desc">Bachelor of Science in Software Engineering.</p>
+          <div class="edu-subjects"><span class="subject-tag">Software Engineering</span><span class="subject-tag">Web Development</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="edu-header">
+            <div class="edu-icon"><i class="fas fa-award"></i></div>
+            <div><h3 class="edu-degree">Additional Qualifications</h3><p class="edu-uni">Professional Development</p></div>
+          </div>
+          <p class="edu-desc">Additional qualifications and training:</p>
+          <div class="edu-subjects"><span class="subject-tag">Diploma in Information Technology (DIT)</span><span class="subject-tag">Full-Stack Development Certificate (3 Months)</span><span class="subject-tag">Short Hand Course</span><span class="subject-tag">AI Automation</span><span class="subject-tag">Graphic Designing</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-header">
+      <span class="section-tag">// 05. GET IN TOUCH</span>
+      <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's Build Something <span class="accent">Amazing</span></h3>
+        <p>Get in touch about professional projects, business websites, and web application development.</p>
+        <div class="contact-cards">
+          <a href="tel:+923370652074" class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+            <div><span class="contact-card-label">Phone</span><span class="contact-card-value">+92 337 0652074</span></div>
+          </a>
+          <a href="https://wa.me/923370652074" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+            <div><span class="contact-card-label">WhatsApp</span><span class="contact-card-value">Message me on WhatsApp</span></div>
+          </a>
+          <a href="mailto:asifgul21704@gmail.com" class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div><span class="contact-card-label">Email</span><span class="contact-card-value">asifgul21704@gmail.com</span></div>
+          </a>
+          <a href="https://github.com/asifgul21704-arch" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+            <div><span class="contact-card-label">GitHub</span><span class="contact-card-value">github.com/asifgul21704-arch</span></div>
+          </a>
+          <a href="https://linkedin.com/in/muhammad-asif-129077399/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-linkedin"></i></div>
+            <div><span class="contact-card-label">LinkedIn</span><span class="contact-card-value">Connect with M. Asif Khan</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form glass-card reveal">
+        <h3>Start a <span class="accent">Conversation</span></h3>
+        <form class="contact-form-fields" action="https://formsubmit.co/asifgul21704@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio contact message">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="contact-website">Leave this field empty</label>
+            <input id="contact-website" type="text" name="_honey" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="contact-name">Your name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Your email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" type="text" placeholder="What would you like to discuss?" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary contact-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="contact-form-note">Your message will be sent to my inbox. Please include a valid email so I can reply.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo"><span class="logo-bracket">&lt;</span>AK<span class="logo-bracket">/&gt;</span></div>
+      <p class="footer-text">Designed &amp; Built by <span class="accent">M. Asif Khan</span></p>
+      <p class="footer-sub">Full-Stack Web Developer | Gomal University</p>
+      <div class="footer-social">
+        <a href="https://github.com/asifgul21704-arch" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/muhammad-asif-129077399/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 M. Asif Khan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

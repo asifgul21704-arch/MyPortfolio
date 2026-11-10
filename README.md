@@ -2,7 +2,7 @@
 
 Static, responsive portfolio for M. Asif Khan, Full-Stack Web Developer.
 
-- **Portfolio:** [my-portfolio-website-rho-ruddy.vercel.app](https://my-portfolio-website-rho-ruddy.vercel.app/)
+- **Portfolio:** [mr-asif-fullstack-portfolio.netlify.app](https://mr-asif-fullstack-portfolio.netlify.app/)
 - **GitHub:** [asifgul21704-arch](https://github.com/asifgul21704-arch)
 - **LinkedIn:** [M. Asif Khan](https://linkedin.com/in/muhammad-asif-129077399/)
 
